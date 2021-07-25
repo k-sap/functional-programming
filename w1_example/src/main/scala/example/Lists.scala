@@ -60,3 +60,11 @@ object Lists:
         throw java.util.NoSuchElementException()
     get_maximum(-999999, xs)
 
+  def factorial(n: Int): Int =
+    def factorialStep(n: Int, factorialValue: Int): Int =
+      if n == 0 then
+        factorialValue
+      else
+        factorialStep(n-1, n * factorialValue)
+    factorialStep(n, 1)
+

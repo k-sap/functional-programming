@@ -106,6 +106,11 @@ class ListsSuite extends munit.FunSuite:
     assert(max(List(3, 7, 2)) == 7)
   }
 
+  test("factorial") {
+    assertEquals(factorial(6), 720)
+    assertEquals(factorial(0), 1)
+    assertEquals(factorial(1), 1)
+  }
 
 
   import scala.concurrent.duration.*
